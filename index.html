@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blocked Site</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            color: #333;
+        }
+        .container {
+            text-align: center;
+            background: #fff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            max-width: 500px;
+        }
+        h1 {
+            color: #d9534f;
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.1em;
+            margin-bottom: 20px;
+        }
+        .blocked-url {
+            font-weight: bold;
+            color: #555;
+        }
+        .button {
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #d9534f;
+            color: #fff;
+            border-radius: 4px;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        .button:hover {
+            background-color: #c9302c;
+        }
+        footer {
+            margin-top: 20px;
+            font-size: 0.8em;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Access Denied</h1>
+        <p>The website <span class="blocked-url">%u</span> has been blocked by your network administrator.</p>
+        <p>If you believe this is a mistake, please contact IT support.</p>
+        <a href="javascript:history.back()" class="button">Go Back</a>
+        <footer>
+            © 2024 Novosta | Network Policy Enforcement
+        </footer>
+    </div>
+</body>
+</html>
